@@ -6,4 +6,3 @@
       name: remoteuser
       comment: Remote User for VDI
       uid: 1040
-      group: admin
