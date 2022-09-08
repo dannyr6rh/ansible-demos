@@ -1,5 +1,6 @@
 ---
 - hosts: node1
+  become: yes
   tasks:
   - name: create user remote
     user: 
