@@ -1,0 +1,14 @@
+---
+- name: hardening tool
+  hosts: node1
+  become: true
+  vars:
+  - harden_firewall: false
+  - harden_time: false
+  - harden_ssh: false
+  
+  tasks:
+    - name: firewall harden
+      when: harden_firewall | bool
+      include_role:
+      name: linux-system-roles.firewall
