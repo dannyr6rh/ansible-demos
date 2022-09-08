@@ -1,9 +1,9 @@
 ---
 - hosts: node1
   tasks:
-    -name: create user remote
-     user: 
-       name: remoteuser
-       comment: Remote User for VDI
-       uid: 1040
-       group: admin
+  -name: create user remote
+   user: 
+     name: remoteuser
+     comment: Remote User for VDI
+     uid: 1040
+     group: admin
